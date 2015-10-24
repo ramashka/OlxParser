@@ -13,6 +13,11 @@
         <jdomVer>2.0.6</jdomVer>
         <springVer>4.2.1.RELEASE</springVer>
         <jSoupVer>1.8.3</jSoupVer>
+        <h2Ver>1.4.190</h2Ver>
+        <org.hibernate.core>5.0.2.Final</org.hibernate.core>
+        <spring-orm>4.2.2.RELEASE</spring-orm>
+        <commons-dbcp>1.4</commons-dbcp>
+        <javassist>3.12.1.GA</javassist>
     </properties>
 
 
@@ -48,6 +53,41 @@
             <artifactId>spring-beans</artifactId>
             <version>${springVer}</version>
         </dependency>
+
+        <!-- Spring ORM -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring-orm}</version>
+        </dependency>
+
+        <!-- Required By Hibernate -->
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>${commons-dbcp}</version>
+        </dependency>
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${javassist}</version>
+        </dependency>
+        <!-- End Required By Hibernate -->
+
+        <!-- H2 -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2Ver}</version>
+        </dependency>
+
+        <!-- Hibernate library -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${org.hibernate.core}</version>
+        </dependency>
+
 
 
 

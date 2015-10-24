@@ -9,4 +9,13 @@
        <constructor-arg type="java.lang.String" value="resources/config.properties"/>
 </bean>
 
+
+       <!-- Определяем папки, в которых будем автоматически искать бины-компоненты (@Component, @Service)  -->
+       <context:component-scan base-package="edu.rdragunov.olxParser.data.dao"/>
+       <context:component-scan base-package="edu.rdragunov.olxParser.data.services"/>
+
+       <!-- Файл с настройками ресурсов для работы с данными (Data Access Resources) -->
+       <import resource="hibernate-config.xml" />
+
+
 </beans>

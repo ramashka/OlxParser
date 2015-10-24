@@ -1,12 +1,11 @@
 package edu.rdragunov.olxParser.config;
 
 import java.io.*;
+import java.nio.charset.Charset;
 import java.util.Properties;
 
 public class ConfigLoader extends Properties{
     private String file;
-
-
 
     public ConfigLoader(String file){
         this.file=file;
@@ -19,10 +18,11 @@ public class ConfigLoader extends Properties{
                 e.printStackTrace();
             }
         }
-        InputStream is=null;
+        InputStreamReader is=null;
 
         try {
-            is=new FileInputStream(f);
+
+            is=new InputStreamReader(new FileInputStream(f),"UTF-8");
             load(is);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

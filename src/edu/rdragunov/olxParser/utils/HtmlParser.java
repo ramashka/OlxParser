@@ -1,7 +1,7 @@
-package edu.rdragunov.olxParser.htmlParser;
+package edu.rdragunov.olxParser.utils;
 
 import edu.rdragunov.olxParser.config.Config;
-import edu.rdragunov.olxParser.entities.Advert;
+import edu.rdragunov.olxParser.data.entities.Advert;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -15,7 +15,6 @@ import java.util.List;
 
 public class HtmlParser {
     private static Config config=Config.CONFIG;
-    private String BASE_URI="localhost";
 
     private List<Advert> adverts=new ArrayList<>();
 

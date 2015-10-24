@@ -4,6 +4,7 @@ public interface properties {
     Integer MAX_PAGES_TO_PARSE=100;
     Integer DEFAULT_PAGE_LOAD_WAIT_MSEC=20000;
     String DEFAULT_ROOT_ELEMENT ="root";
+    String OLX_DELIMETER = ".olx.ua";
 
     String KEY_MAX_PAGES_TO_PARSE ="count_pages_for_search";
     String KEY_URL_PAGE_TO_PARSE ="url";
